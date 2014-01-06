@@ -1,0 +1,16 @@
+webserver/target/
+webserver/target-eclipse/
+.DS_Store
+.classpath
+.project
+.settings
+cobertura.ser
+*.log
+*.iml
+*.ipr
+*.iws
+.idea
+webserver/out/
+webserver/.swp
+.metadata/
+webserver/.groovy/*

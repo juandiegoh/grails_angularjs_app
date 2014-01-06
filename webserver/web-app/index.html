@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" ng-app="configParamsApp">
+<head>
+    <title>Billing Bills Configuration</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/angular.min.js"></script>
+    <script src="js/application.js"></script>
+</head>
+
+<body ng-controller="ConfigParamsController">
+<header>
+    <img id="logo" src="images/mercadolibre.png">
+</header>
+
+<h1 id="title">Config Params</h1>
+<p id="subtitle">Configuraci&oacute;n de Billing Bills</p>
+
+<table>
+    <tr>
+        <th><label>SCOPE</label></th>
+        <th><label>INSTANCE</label></th>
+        <th><label>ACTIVE?</label></th>
+        <th><label>SELECTION TYPE</label></th>
+        <th><label>RESTO</label></th>
+        <th><label>QUANTITY</label></th>
+    </tr>
+    <tr ng-repeat="config in configs">
+        <td><label>{{ config.mainScopeFunctionality }}</label></td>
+        <td><label>{{ config.instanceAvailables }}</label></td>
+        <td><label>{{ config.active }}</label></td>
+        <td><label>{{ config.selectionType }}</label></td>
+        <td><label>{{ config.selectionId }}</label></td>
+        <td><label>{{ config.quantity }}</label></td>
+    </tr>
+</table>
+<div ng-view></div>
+
+</body>
+</html>

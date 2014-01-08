@@ -4,10 +4,11 @@
     <title>Billing Bills Configuration</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
     <script src="js/application.js"></script>
 </head>
 
-<body ng-controller="ConfigParamsController">
+<body>
 <header>
     <img id="logo" src="images/mercadolibre.png">
 </header>
@@ -15,7 +16,7 @@
 <h1 id="title">Config Params</h1>
 <p id="subtitle">Configuraci&oacute;n de Billing Bills</p>
 
-<table>
+<!-- <table>
     <tr>
         <th><label>SCOPE</label></th>
         <th><label>INSTANCE</label></th>
@@ -32,7 +33,7 @@
         <td><label>{{ config.selectionId }}</label></td>
         <td><label>{{ config.quantity }}</label></td>
     </tr>
-</table>
+</table> -->
 <div ng-view></div>
 
 </body>

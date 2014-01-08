@@ -7,6 +7,8 @@ class UrlMappings {
 			}
 		}
 
+            "/configParams/list"(controller: "configParams") { action = [OPTIONS:"cors", GET:"list"] }
+
 		"500"(view:'/error')
 	}
 }

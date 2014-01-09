@@ -5,6 +5,7 @@ import grails.converters.JSON
 class ConfigParamsController {
 
     def list() {
+      response.addHeader("Access-Control-Allow-Origin", "*")
       render ConfigParams.list() as JSON
     }
 

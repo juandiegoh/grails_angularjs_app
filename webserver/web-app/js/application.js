@@ -15,7 +15,7 @@ configParamsApp.controller('ConfigParamsController', ['$scope', '$http', '$log',
 
     // load all configs, copying to the "configs" list on success
     $scope.loadConfigs = function() {
-        $http.get({method: 'GET', url: 'http://localhost:8080/webserver/configParams/list'})
+        $http.get('http://localhost:8080/webserver/configParams/list')
             .success( function( data ) {
                 $scope.configs = data
             })
